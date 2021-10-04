@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7fffd4"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    //Membuat logo sapi
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:src="@drawable/sapi"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="78dp"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        //Membuat inputan text nama
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:layout_marginVertical="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        //Membuat auto complate text untuk jenis sapi
+        <AutoCompleteTextView
+            android:id="@+id/actJenis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis"
+            android:layout_marginVertical="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        //Membuat inputan text berat
+        <EditText
+            android:id="@+id/etBerat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Berat (kg)"
+            android:layout_marginVertical="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        //Membuat inputan text tinggi
+        <EditText
+            android:id="@+id/etTinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tinggi (cm)"
+            android:layout_marginVertical="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        //Membuat auto complate text untuk asal daerah
+        <AutoCompleteTextView
+            android:id="@+id/actAsal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Daerah Asal"
+            android:layout_marginVertical="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        //Membuat button submit
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#daa520"/>
+
+    </LinearLayout>
+</LinearLayout>
